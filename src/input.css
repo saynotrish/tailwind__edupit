@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+    @apply mx-auto p-[1.5rem] w-full max-w-[140rem] lg:max-w-[80rem];
+}
+
+@layer components{
+    .header{
+        @apply flex items-center
+    }
+    .header img{
+        @apply my-[1rem]
+    }
+    .about__wrapper{
+        @apply flex flex-col lg:flex-row
+    }
+    .about__wrapper img{
+        @apply w-[25rem] mx-auto
+    }
+    .about__right__item{
+        @apply flex flex-col gap-[2rem]
+    }
+    .about__right__item h6{
+        @apply text-[1.5rem] font-bold text-primary;
+    }
+    .about__right__item h3{
+        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+    }
+    .right__item__text p{
+        @apply text-[1.2rem] text-gray-500 text-justify
+    }
+    .right__item__text p:first-child{
+        @apply pl-[.5rem] pb-[1.5rem] mb-[1rem] border-l-[3px] border-primary
+    }
+    .success__section{
+        @apply flex flex-col
+    }
+    .success__section h3{
+        @apply mb-[1rem]
+    }
+    .success__bar{
+        @apply my-3; 
+    }
+    .success__bar__circle{
+        @apply h-[3px] w-[90px] bg-primary my-0 mx-0 relative rounded-[30px]
+    }
+    .success__bar__circle::before{
+        @apply content-[""] absolute left-0 top-[50%] transform translate-y-[-50%] border-primary border-[6px] rounded-[50%] bg-[#1c1b1b] animate-sliding1
+    }
+    .success__bar__circle::after{
+        @apply content-[""] absolute right-0 top-[50%] transform translate-y-[-50%] border-primary border-[6px] rounded-[50%] bg-[#1c1b1b] animate-sliding2
+    }
+    .success__logo{
+        @apply flex gap-[5rem] my-[2.5rem]
+    }
+    .success__logo img{
+        @apply w-[5rem];
+    }
+}   
