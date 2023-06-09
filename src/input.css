@@ -13,6 +13,13 @@
     .header img{
         @apply my-[1rem]
     }
+    /* ------------------BANNER-------------------- */
+    .banner{
+        @apply bg-dark h-[30rem];
+    }
+    .banner__wrapper h1{
+        @apply text-[10rem] font-sans text-stroke-white 
+    }
     /* ------------------ABOUT-------------------- */
     .about__wrapper{
         @apply flex flex-col lg:flex-row
@@ -62,10 +69,13 @@
 
     /* ------------------TODAY-------------------- */
     .today__wrapper h6{
-        @apply text-[1.5rem] font-bold text-primary
+        @apply text-[1.5rem] font-bold text-primary lg:text-center
     }
     .today__wrapper h3{
-        @apply text-[1.62rem] font-bold text-textDark mb-[2rem];
+        @apply text-[1.62rem] font-bold text-textDark mb-[2rem] lg:text-center;
+    }
+    .today__cards{
+        @apply flex flex-col gap-[3rem] lg:grid lg:grid-cols-[_1fr,_1fr,_1fr]
     }
     .today__cards__item{
         @apply relative shadow-xl rounded-md;
@@ -74,7 +84,7 @@
         @apply flex flex-col gap-[.5rem] mt-[1.5rem];
     }
     .today__item__text h5{
-        @apply text-dark text-[1.2rem] font-semibold mx-[1.5rem];
+        @apply text-dark text-[1.2rem] font-semibold mx-[1.5rem] hover:text-primary hover:duration-300;
     }
     .today__ratings{
         @apply flex items-center gap-3 mx-[1.5rem];
@@ -112,6 +122,4 @@
     .img__text p{
         @apply absolute text-[1.2rem] text-white px-[.5rem] py-[.2rem] top-3 left-3 bg-primary rounded-md
     }
-
-}   
-    
+}
