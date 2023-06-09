@@ -44,12 +44,55 @@
         </div>
     </section>
 
+    <section class="today">
+        <div class="container">
+            <div class="today__wrapper">
+                <h6>ALL EDUPIT SCHOOL, ALL THE TIME</h6>
+                <h3>What do you want to learn
+                    today?</h3>
+                <div class="today__cards">
+                    <div class="today__cards__item">
+                        <div class="today__card__img">
+                            <img src="./img/bo1.jpg" alt="">
+                        </div>
+                        <div class="today__item__text">
+                            <div class="today__ratings">
+                                <ul>
+                                    <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                                    <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                                    <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                                    <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                                    <li><i class="fa-solid fa-star" style="color: #0eb582;"></i></li>
+                                </ul>
+                                <p>4.50<span>(2)</span></p>
+                            </div>
+                            <h5>The Complete Product Management Course</h5>
+                            <div class="author">
+                                <img src="./img/liton-sarkar.jpg" alt="">
+                                <p>by <span>Liton Sakar</span> in <span>Marketing</span></p>
+                            </div>
+                            <div class="price">
+                                <p>Free</p>
+                                <p>Get Enrolled</p>
+                            </div>
+                            <div class="img__text">
+                                <i class="fa-solid fa-bookmark" style="color: #0eb582"></i>
+                            <p>Philosophy</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="module">
         var slider = tns({
             container: '.success__logo',
-            items: 1,
+            items: 2,
             slideBy: 'page',
             autoplay: true,
             axis: 'horizontal',
@@ -63,9 +106,9 @@
                 1024: {
                     items: 6,
                     nav: false,
+                    autoplay: true,
                     controls: true,
-                    controlsText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
-                    slideBy: 1
+                    slideBy: 'page'
                 }
             }
         });
