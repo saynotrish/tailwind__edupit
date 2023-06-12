@@ -128,19 +128,19 @@
         @apply text-[1.5rem] font-bold text-primary
     }
     .instructor__wrapper h3{
-        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+        @apply text-[1.62rem] font-bold text-textDark
     }
     .instructor__card{
-        @apply flex items-center flex-col
+        @apply flex items-center flex-col mt-5 border-primary border-[1px] py-[2.5rem] rounded-md border-opacity-30
     }
     .instructor__card h3{
-        @apply text-[2rem] text-dark font-semibold mt-[1rem]
+        @apply text-[1.7rem] text-dark font-semibold mt-[1rem]
     }
     .instructor__card h6{
-        @apply text-[1.2rem] text-gray-500
+        @apply text-[1rem] text-gray-500
     }
     .instructor__card__social ul{
-        @apply flex gap-3 mt-[1.5rem]
+        @apply flex gap-3 my-[1.5rem]
     }
     .instructor__card__social ul li {
         @apply py-[.5rem] px-[.8rem] bg-[#dbf4ec] text-[1rem] text-primary rounded-md
