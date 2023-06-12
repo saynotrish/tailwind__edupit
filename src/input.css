@@ -122,4 +122,53 @@
     .img__text p{
         @apply absolute text-[1.2rem] text-white px-[.5rem] py-[.2rem] top-3 left-3 bg-primary rounded-md
     }
+
+    /* ------------------INSTRUCTOR-------------------- */
+    .instructor__wrapper h6{
+        @apply text-[1.5rem] font-bold text-primary
+    }
+    .instructor__wrapper h3{
+        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+    }
+    .instructor__card{
+        @apply flex items-center flex-col
+    }
+    .instructor__card h3{
+        @apply text-[2rem] text-dark font-semibold mt-[1rem]
+    }
+    .instructor__card h6{
+        @apply text-[1.2rem] text-gray-500
+    }
+    .instructor__card__social ul{
+        @apply flex gap-3 mt-[1.5rem]
+    }
+    .instructor__card__social ul li {
+        @apply py-[.5rem] px-[.8rem] bg-[#dbf4ec] text-[1rem] text-primary rounded-md
+    }
+
+    /* ------------------FACILITY-------------------- */
+    .facility__wrapper{
+        @apply flex items-center flex-col gap-2
+    }
+    .facility__wrapper h6{
+        @apply text-[1.5rem] font-bold text-primary
+    }
+    .facility__wrapper h3{
+        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+    }
+    .facility__item__card{
+        @apply flex items-center flex-col gap-5 mt-[1rem] border-primary border-[1px] p-[5rem] rounded-md border-opacity-30
+    }
+    .facility__item__card img{
+        @apply w-[5rem]
+    }
+    .item__card__text{
+        @apply text-center
+    }
+    .item__card__text h3{
+        @apply text-[2rem] font-semibold
+    }
+    .item__card__text p{
+        @apply text-[1.5rem] text-gray-500
+    }
 }
