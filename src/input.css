@@ -131,13 +131,29 @@
         @apply text-[1.62rem] font-bold text-textDark
     }
     .instructor__card{
-        @apply flex items-center flex-col mt-5 border-primary border-[1px] py-[2.5rem] rounded-md border-opacity-30
+        @apply flex flex-col mt-5 border-primary border-[1px] py-[2.5rem] rounded-md border-opacity-30
+    }
+
+    .instructor__content{
+        @apply flex flex-col items-center
+    }
+    .instructor__card:hover .instructor__card__social::before{
+        @apply w-[100%] bg-primary;
     }
     .instructor__card h3{
         @apply text-[1.7rem] text-dark font-semibold mt-[1rem]
     }
     .instructor__card h6{
         @apply text-[1rem] text-gray-500
+    }
+    .instructor__card__social{
+        @apply relative  flex justify-center;
+    }
+    /* .instructor__card__social span{
+        @apply px-[13.5rem] pt-[20rem] pb-[8rem]
+    } */
+    .instructor__card__social::before{
+        @apply content-[""] absolute bg-[#ddd] mx-auto top-0 h-[1px] w-[25%] transition-[.5s]
     }
     .instructor__card__social ul{
         @apply flex gap-3 my-[1.5rem]
@@ -171,4 +187,34 @@
     .item__card__text p{
         @apply text-[1.5rem] text-gray-500
     }
+
+    /* ------------------BENEFITS-------------------- */
+    .benefits__wrapper h6{
+        @apply text-[1.5rem] font-bold text-primary
+    }
+    .benefits__wrapper h3{
+        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+    }
+    .benefits__card__item{
+        @apply flex flex-col gap-5 pb-[2.5rem] shadow-md mx-[.3rem] rounded-md
+    }
+    .iconwithText{
+        @apply flex items-center gap-5
+    }
+    .item__text{
+        @apply mx-[1.5rem]
+    }
+    .item__text h5{
+        @apply text-[1.3rem] text-dark font-semibold mb-[1rem]
+    }
+    .iconwithText p{
+        @apply flex items-center gap-2 text-primary text-[1rem] font-semibold
+    }
+    .btn__card{
+        @apply mt-[1.5rem] mx-[1.5rem]
+    }
+    .btn__card a{
+        @apply text-[1.2rem] py-[.7rem] px-[1.5rem] border-[1px] hover:bg-primary duration-300
+    }
+    
 }

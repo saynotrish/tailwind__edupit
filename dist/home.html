@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
-    <header class="header">
-        <img src="./img/logo.png" alt="">
-    </header>
-
-    <section class="banner">
+    <header class="header bg-red-500">
         <div class="container">
-            <div class="banner__wrapper">
-                <h1>EDUPIT</h1>
+            <div class="header__wrapper">
+                <div class="branding">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="./img/logo.png">
+                        <source media="(min-width: 1080px)" srcset="./img/logo2.png">
+                        <img src="./img/logo.png" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section class="about">
         <div class="container">
@@ -256,9 +258,11 @@
                 <h6>Instructors</h6>
                 <h3>What do you want to learn today?</h3>
                 <div class="instructor__card">
-                    <img src="./img/team-01.jpg" alt="">
-                    <h3>Ethan Cooper</h3>
-                    <h6>MANAGING PARTNER</h6>
+                    <div class="instructor__content">
+                        <img src="./img/team-01.jpg" alt="">
+                        <h3>Ethan Cooper</h3>
+                        <h6>MANAGING PARTNER</h6>
+                    </div>
                     <div class="instructor__card__social">
                         <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -268,9 +272,25 @@
                     </div>
                 </div>
                 <div class="instructor__card">
-                    <img src="./img/team-02.jpg" alt="">
-                    <h3>Chris Anderson</h3>
-                    <h6>PARTNER</h6>
+                    <div class="instructor__content">
+                        <img src="./img/team-02.jpg" alt="">
+                        <h3>Chris Anderson</h3>
+                        <h6>PARTNER</h6>
+                    </div>
+                        <div class="instructor__card__social">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="instructor__card">
+                    <div class="instructor__content">
+                        <img src="./img/team-01.jpg" alt="">
+                        <h3>Ethan J. Cooper</h3>
+                        <h6>MANAGING PARTNER</h6>
+                    </div>
                     <div class="instructor__card__social">
                         <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -280,21 +300,11 @@
                     </div>
                 </div>
                 <div class="instructor__card">
-                    <img src="./img/team-01.jpg" alt="">
-                    <h3>Ethan J. Cooper</h3>
-                    <h6>MANAGING PARTNER</h6>
-                    <div class="instructor__card__social">
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
+                    <div class="instructor__content">
+                        <img src="./img/team-02.jpg" alt="">
+                        <h3>Russel Smith</h3>
+                        <h6>PRODUCT OFFICER</h6>
                     </div>
-                </div>
-                <div class="instructor__card">
-                    <img src="./img/team-02.jpg" alt="">
-                    <h3>Russel Smith</h3>
-                    <h6>PRODUCT OFFICER</h6>
                     <div class="instructor__card__social">
                         <ul>
                             <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -378,7 +388,25 @@
     <section class="benefits">
         <div class="container">
             <div class="benefits__wrapper">
-
+                <h6>NEWS</h6>
+                <h3>All the benefits you get in our
+                    latest news & blog</h3>
+                    <div class="benefits__cards">
+                        <div class="benefits__card__item">
+                            <img src="./img/blog1.jpg" alt="">
+                            <div class="item__text">
+                                <h5>Transforming our in science facilities</h5>
+                                <div class="iconwithText">
+                                    <p><i class="fa-solid fa-tags"></i><a href="">Architecture</a></p>
+                                    <p><i class="fa-regular fa-clock"></i><a href="">05 May 2021</a></p>
+                                </div>
+                            </div>
+                            <div class="btn__card">
+                                <a href="">VIEW More</a>
+                            </div>
+                            
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
