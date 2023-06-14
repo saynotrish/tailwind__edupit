@@ -130,15 +130,20 @@
     .instructor__wrapper h3{
         @apply text-[1.62rem] font-bold text-textDark
     }
-    .instructor__card{
-        @apply flex flex-col mt-5 border-primary border-[1px] py-[2.5rem] rounded-md border-opacity-30
+    .instructor__card__section{
+        @apply flex gap-5
     }
-
+    .instructor__card{
+        @apply flex flex-col mt-5 border-primary border-[3px] py-[2.3rem] rounded-md border-opacity-25
+    }
     .instructor__content{
         @apply flex flex-col items-center
     }
+    .instructor__card{
+        @apply hover:border-white hover:shadow-md
+    }
     .instructor__card:hover .instructor__card__social::before{
-        @apply w-[100%] bg-primary;
+        @apply w-[100%] bg-primary transition-[.5s] duration-500;
     }
     .instructor__card h3{
         @apply text-[1.7rem] text-dark font-semibold mt-[1rem]
@@ -164,28 +169,28 @@
 
     /* ------------------FACILITY-------------------- */
     .facility__wrapper{
-        @apply flex items-center flex-col gap-2
+        @apply flex items-center flex-col  text-center
     }
     .facility__wrapper h6{
         @apply text-[1.5rem] font-bold text-primary
     }
     .facility__wrapper h3{
-        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+        @apply text-[1.7rem] font-bold text-textDark
+    }
+    .facility__item{
+        @apply flex items-center flex-col gap-[2rem] mt-[3rem] lg:grid lg:grid-cols-[_1fr,_1fr,_1fr,_1fr]
     }
     .facility__item__card{
-        @apply flex items-center flex-col gap-5 mt-[1rem] border-primary border-[1px] p-[5rem] rounded-md border-opacity-30
-    }
-    .facility__item__card img{
-        @apply w-[5rem]
+        @apply flex items-center flex-col gap-5 border-primary border-[3px] w-[28rem] py-[3.5rem] rounded-md border-opacity-30 lg:w-[17.7rem]
     }
     .item__card__text{
         @apply text-center
     }
     .item__card__text h3{
-        @apply text-[2rem] font-semibold
+        @apply text-[1.5rem] font-bold
     }
     .item__card__text p{
-        @apply text-[1.5rem] text-gray-500
+        @apply text-[1.2rem] text-gray-500
     }
 
     /* ------------------BENEFITS-------------------- */
@@ -193,28 +198,41 @@
         @apply text-[1.5rem] font-bold text-primary
     }
     .benefits__wrapper h3{
-        @apply text-[1.62rem] font-bold text-textDark mb-[2rem]
+        @apply text-[1.62rem] font-bold text-textDark
+    }
+    .benefits__cards{
+        @apply flex items-start lg:gap-[2rem] lg:my-[2rem];
     }
     .benefits__card__item{
-        @apply flex flex-col gap-5 pb-[2.5rem] shadow-md mx-[.3rem] rounded-md
+        @apply flex flex-col gap-5 pb-[2.5rem] max-w-[30rem] shadow-md rounded-md
+    }
+    .benefits__card__item img{
+        @apply w-full;
     }
     .iconwithText{
-        @apply flex items-center gap-5
+        @apply flex items-center gap-5;
     }
     .item__text{
-        @apply mx-[1.5rem]
+        @apply mx-[1rem] mt-[1rem]
     }
     .item__text h5{
-        @apply text-[1.3rem] text-dark font-semibold mb-[1rem]
+        @apply text-[1.3rem] text-dark font-semibold lg:text-[1.5rem] mb-[1rem]
     }
     .iconwithText p{
         @apply flex items-center gap-2 text-primary text-[1rem] font-semibold
     }
     .btn__card{
-        @apply mt-[1.5rem] mx-[1.5rem]
+        @apply mt-[1.5rem] ml-[1rem]
     }
     .btn__card a{
-        @apply text-[1.2rem] py-[.7rem] px-[1.5rem] border-[1px] hover:bg-primary duration-300
+        @apply text-[1.2rem] py-[.7rem] px-[1.5rem] border-[1px] rounded-md hover:bg-primary hover:text-white hover:border-primary hover:transition-[.5s] ease-in duration-300
     }
     
 }
+    .benefits #tns2 > .tns-item{
+        @apply pr-0
+    }
+    .benefits .tns-nav{
+        @apply hidden
+    }
+
