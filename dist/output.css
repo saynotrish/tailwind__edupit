@@ -959,10 +959,6 @@ video {
   justify-content: center;
 }
 
-/* .instructor__card__social span{
-        @apply px-[13.5rem] pt-[20rem] pb-[8rem]
-    } */
-
 .instructor__card__social::before {
   position: absolute;
   top: 0px;

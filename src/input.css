@@ -154,9 +154,6 @@
     .instructor__card__social{
         @apply relative  flex justify-center;
     }
-    /* .instructor__card__social span{
-        @apply px-[13.5rem] pt-[20rem] pb-[8rem]
-    } */
     .instructor__card__social::before{
         @apply content-[""] absolute bg-[#ddd] mx-auto top-0 h-[1px] w-[25%] transition-[.5s]
     }
