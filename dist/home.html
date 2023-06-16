@@ -28,117 +28,332 @@
         </div>
     </header> -->
 
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="branding">
-                <picture>
-                    <source media="(max-width:500px)" srcset="./img/logo.png">
-                    <source media="(min-width:1080px)" srcset="./img/logo2.png">
-                    <img src="./img/logo.png" alt="Flowers" style="width:auto;">
-                  </picture>
+    <!-- <header class="header">
+        <div class="header__subheader">
+            <div class="header__subheader__wrapper">
+                <div class="subheader__text">
+                    <p>2020-2021 Admission going on . .</p>
+                    <a href=""><i class="fa-solid fa-phone"></i><p>+1-2345-2345-54</p></a>
+                </div>
+                <div class="subheader__icons">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="subheader__actions">
+                    <a href=""><i class="fa-solid fa-user"></i>Login</a>
+                    <a href=""><i class="fa-solid fa-key"></i>Register</a>
+                </div>
             </div>
-            <div class="header__nav">
-                <div class="header__nav__title">
-                    <h2>MENU</h2>
+
+        </div>
+        <div class="header__nav">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="header__menu">
+                    <h5>MENU</h5>
                     <div class="toggle__menu">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
-                <nav>
-                    <li class="drop__nav group">
-                        <h4><p>HOME</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1]  lg:top-[5.5rem] lg:h-fit">
+                <div class="header__nav__items">
+                    <ul>
+                        <li><a href="">HOME<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">Home One</a></li>
+                                    <li><a href="">Home Two</a></li>
+                                    <li><a href="">Landing Page</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">ABOUT<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">About Style 02</a></li>
+                                    <li><a href="">About Style 03</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">COURSES<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">Courses</a></li>
+                                    <li><a href="">Instructo Registration</a></li>
+                                    <li><a href="">Student Registration</a></li>
+                                    <li><a href="">Dashboard</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">ACADEMICS<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">Academics</a></li>
+                                    <li><a href="javascript:void(0)">Admission<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="dropdown children">
+                                            <ul class="child">
+                                                <li><a href="">Admission</a></li>
+                                                <li><a href="">Tuition & Fees</a></li>
+                                                <li><a href="">How To Apply</a></li>
+                                                <li><a href="">Schedule A Tour</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="javascript:void(0)">Elements<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="dropdown children">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Portfolio<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                                    <div class="dropdown children-portfolio">
+                                                        <ul>
+                                                            <li><a href="">Portfolio</a></li>
+                                                            <li><a href="">Portfolio 2Column</a></li>
+                                                            <li><a href="">Portfolio 3Column</a></li>
+                                                            <li><a href="">Portfolio 4Column</a></li>
+                                                            <li><a href="">Portfolio 2Column Gutter</a></li>
+                                                            <li><a href="">Portfolio 3Column Gutter</a></li>
+                                                            <li><a href="">Portfolio 4Column Gutter</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li><a href="">Feature</a></li>
+                                                <li><a href="">Our Clients</a></li>
+                                                <li><a href="">Service</a></li>
+                                                <li><a href="">Advance Tab</a></li>
+                                                <li><a href="">Image Box</a></li>
+                                                <li><a href="">Call To Action</a></li>
+                                                <li><a href="">Our Process</a></li>
+                                                <li><a href="">Progress Bar</a></li>
+                                                <li><a href="">Alert</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="javascript:void(0)">Service Style<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="dropdown children">
+                                            <ul class="child">
+                                                <li><a href="">Service Style</a></li>
+                                                <li><a href="">Service Style 02</a></li>
+                                                <li><a href="">Service Style 03</a></li>
+                                                <li><a href="">Service Details</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="javascript:void(0)">Team<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="dropdown children">
+                                            <ul class="child">
+                                                <li><a href="">Team</a></li>
+                                                <li><a href="">Team Details</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">Pricing Plan</a></li>
+                                    <li><a href="">Why Choose Us</a></li>
+                                    <li><a href="">Counter</a></li>
+                                    <li><a href="javascript:void(0)">Case Study<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="dropdown children">
+                                            <ul class="child">
+                                                <li><a href="">Case Study</a></li>
+                                                <li><a href="">Case Study Details</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="">FAQ'S</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">BLOG<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Blog Left Sidebar</a></li>
+                                    <li><a href="">Blog Right Sidebar</a></li>
+                                    <li><a href="">Blog Left 2Column</a></li>
+                                    <li><a href="">Blog Right 2Column</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">CONTACT<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Contact Style 02</a></li>
+                                    <li><a href="">Contact Style 03</a></li>
+                                    <li><a href="">Contact Style 04</a></li>
+                                    <li><a href="">Contact Style 05</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__navbtn">
+                        <a href="" class="btn green">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__content">
+                <div class="header__text">
+                    <p>2020-2021 Admission going on . .</p>
+                    <a href=""><i class="fa-solid fa-phone"></i><p>+1-2345-2345-54</p></a>
+                </div>
+                <div class="header__icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+                <div class="header__actions">
+                    <a href=""><i class="fa-solid fa-user"></i>Login</a>
+                    <a href=""><i class="fa-solid fa-key"></i>Register</a>
+                </div>
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="header__wrapper nav">
+            <div class="header__container">
+                <div class="header__brand">
+                    <img src="./img/logo2.png" alt="">
+                </div>
+                <h6>MENU
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </h6>
+                <ul>
+                    <li><a href="javascript:void(0)">HOME<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
                                 <li><a href="">Home One</a></li>
                                 <li><a href="">Home Two</a></li>
+                                <li><a href="">Landing Page</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="drop__nav group">
-                        <h4><p>ABOUT</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <li><a href="javascript:void(0)">ABOUT<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
+                                <li><a href="">About</a></li>
                                 <li><a href="">About Style 02</a></li>
                                 <li><a href="">About Style 03</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="drop__nav group">
-                        <h4><p>COURSES</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <li><a href="javascript:void(0)">COURSES<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
-                                <li><a href="">Instructor Registration</a></li>
+                                <li><a href="">Courses</a></li>
+                                <li><a href="">Instructo Registration</a></li>
                                 <li><a href="">Student Registration</a></li>
                                 <li><a href="">Dashboard</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="drop__nav group">
-                        <h4><p>ACADEMICS</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <li><a href="javascript:void(0)">ACADEMICS<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
-                                <li><a href="">Admission</a></li>
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">Elements</a></li>
-                                <li><a href="">Service Style</a></li>
-                                <li><a href="">Team</a></li>
+                                <li><a href="">Academics</a></li>
+                                <li><a href="javascript:void(0)">Admission<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                    <div class="dropdown children">
+                                        <ul class="child">
+                                            <li><a href="">Admission</a></li>
+                                            <li><a href="">Tuition & Fees</a></li>
+                                            <li><a href="">How To Apply</a></li>
+                                            <li><a href="">Schedule A Tour</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)">Elements<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                    <div class="dropdown children">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">Portfolio<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                                <div class="dropdown children-portfolio">
+                                                    <ul>
+                                                        <li><a href="">Portfolio</a></li>
+                                                        <li><a href="">Portfolio 2Column</a></li>
+                                                        <li><a href="">Portfolio 3Column</a></li>
+                                                        <li><a href="">Portfolio 4Column</a></li>
+                                                        <li><a href="">Portfolio 2Column Gutter</a></li>
+                                                        <li><a href="">Portfolio 3Column Gutter</a></li>
+                                                        <li><a href="">Portfolio 4Column Gutter</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="">Feature</a></li>
+                                            <li><a href="">Our Clients</a></li>
+                                            <li><a href="">Service</a></li>
+                                            <li><a href="">Advance Tab</a></li>
+                                            <li><a href="">Image Box</a></li>
+                                            <li><a href="">Call To Action</a></li>
+                                            <li><a href="">Our Process</a></li>
+                                            <li><a href="">Progress Bar</a></li>
+                                            <li><a href="">Alert</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)">Service Style<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                    <div class="dropdown children">
+                                        <ul class="child">
+                                            <li><a href="">Service Style</a></li>
+                                            <li><a href="">Service Style 02</a></li>
+                                            <li><a href="">Service Style 03</a></li>
+                                            <li><a href="">Service Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)">Team<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                    <div class="dropdown children">
+                                        <ul class="child">
+                                            <li><a href="">Team</a></li>
+                                            <li><a href="">Team Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a href="">Pricing Plan</a></li>
                                 <li><a href="">Why Choose Us</a></li>
-                                <li><a href="">Countdown</a></li>
                                 <li><a href="">Counter</a></li>
-                                <li><a href="">Case Study</a></li>
-                                <li><a href="">FAQs</a></li>
+                                <li><a href="javascript:void(0)">Case Study<span></span><i class="fa-solid fa-chevron-right"></i></a>
+                                    <div class="dropdown children">
+                                        <ul class="child">
+                                            <li><a href="">Case Study</a></li>
+                                            <li><a href="">Case Study Details</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">FAQ'S</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="drop__nav group">
-                        <h4><p>BLOG</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <li><a href="javascript:void(0)">BLOG<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
+                                <li><a href="">Blog</a></li>
                                 <li><a href="">Blog Left Sidebar</a></li>
                                 <li><a href="">Blog Right Sidebar</a></li>
-                                <li><a href="">Blog Left 2 Column</a></li>
-                                <li><a href="">BlogRight 2 Column</a></li>
-                                <li><a href="">Blog Both Sidebar</a></li>
+                                <li><a href="">Blog Left 2Column</a></li>
+                                <li><a href="">Blog Right 2Column</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="drop__nav group">
-                        <h4><p>CONTACT</p>
-                        <div class="drop__toggle">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        </h4>
-                        <div class="drop__content lg:group-hover:opacity-[1] lg:top-[5.5rem] lg:h-fit">
+                    <li><a href="javascript:void(0)">CONTACT<i class="fa-solid fa-chevron-down"></i><span></span></a>
+                        <div class="dropdown">
                             <ul>
+                                <li><a href="">Contact</a></li>
                                 <li><a href="">Contact Style 02</a></li>
                                 <li><a href="">Contact Style 03</a></li>
                                 <li><a href="">Contact Style 04</a></li>
@@ -146,32 +361,13 @@
                             </ul>
                         </div>
                     </li>
-                    <a href="" class="free btn--solid">Free Trial</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <section class="banner bg-url(./img/bannerBg.jpg)">
-        <div class="container">
-            <div class="banner__wrapper">
-                <div class="banner__item">
-                    <div class="banner__item__text">
-                        <h1>EDUPIT</h1>
-                        <h2>Education Is the <br> Backbone of the Nation.</h2>
-                        <h3>Get the most of reduction in your team's operating creates amazing UI/UX experiences.</h3>
-                        <div class="banner__item__text__btn">
-                            <ul>
-                                <li><a href="" class="btn--solid">START TRIAL</a></li>
-                                <li><a href="" class="btn--outline">VIEW COURSES</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <img src="./img/abbut-img.png" alt="">
+                </ul>
+                <div class="header__quate">
+                    <a href="" class="btn green">Get a Quate</a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section class="about">
         <div class="container">
