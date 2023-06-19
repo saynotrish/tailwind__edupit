@@ -39,7 +39,7 @@ nav.forEach((baba) => {
   });
 });
 
-const gutter = document.querySelector(".header__wrapper.nav");
+const gutter = document.querySelector(".header__nav.nav");
 window.addEventListener("scroll", () => {
   console.log(window.pageYOffset);
   if (window.pageYOffset >= 300) {
